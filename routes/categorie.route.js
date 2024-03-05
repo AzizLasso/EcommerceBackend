@@ -52,4 +52,4 @@ router.delete('/:categorieId', async (req, res)=> {
     await Categorie.findByIdAndDelete(id);
     res.json({ message: "categorie deleted successfully." });
 });
-module.exports = router
+module.exports = router;
