@@ -3,6 +3,8 @@ const mongoose =require("mongoose")
 const dotenv =require('dotenv')
 const cors = require('cors')
 const app = express();
+const categorieRouter =require("./routes/categorie.route")
+app.use('/api/categories', categorieRouter);
 //config dotenv
 dotenv.config()
 //Les cors
